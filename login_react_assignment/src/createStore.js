@@ -9,7 +9,7 @@ let initialState = {
   usersState: Map({ isLoggedIn: false, firstName: '', lastName: '' })
 };
 
-const store = createStore(  {},initialState, composeWithDevTools(
+const store = createStore(  initialState, composeWithDevTools(
   applyMiddleware(thunk, createLogger())));
 
 
