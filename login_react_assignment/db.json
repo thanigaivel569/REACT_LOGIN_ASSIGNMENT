@@ -1,0 +1,73 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "firstName": "thanigaivel",
+      "lastName": "tizen",
+      "email": "thanigaiveltizen@gmail.com",
+      "password": "pass@123"
+    },
+    {
+      "id": 2,
+      "firstName": "tizen",
+      "lastName": "tom",
+      "email": "tizentom@gmail.com",
+      "password": "pass@123"
+     
+    },
+    {
+      
+      "id": 3,
+      "firstName": "thanigaivel",
+      "lastName": "a",
+      "email": "thanigaivela@gmail.com",
+      "password": "pass@123"
+    },
+    
+    {
+      
+      "id": 4,
+      "firstName": "tizen",
+      "lastName": "333",
+      "email": "tizen333@gmail.com",
+      "password": "pass@123"
+    }
+
+
+
+  ],
+  "Forgetpass": [
+    {
+      "id": 1,
+      "firstName": "thanigaivel",
+      "lastName": "tizen",
+      "email": "thanigaiveltizen@gmail.com",
+      "password": "pass@123"
+    },
+    {
+      "id": 2,
+      "firstName": "tizen",
+      "lastName": "tom",
+      "email": "tizentom@gmail.com",
+      "password": "pass@123"
+     
+    },
+    {
+      
+      "id": 3,
+      "firstName": "thanigaivel",
+      "lastName": "a",
+      "email": "thanigaivela@gmail.com",
+      "password": "pass@123"
+    },
+    
+    {
+      
+      "id": 4,
+      "firstName": "tizen",
+      "lastName": "333",
+      "email": "tizen333@gmail.com",
+      "password": "pass@123"
+    }
+  ]
+}
