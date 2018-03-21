@@ -4,15 +4,13 @@ import { Link } from 'react-router-dom';
 import axios from 'axios';
 
 class Forgetpwd extends React.PureComponent {
-
-  constructor(props) {
+ constructor(props) {
     super(props);
     this.state = { email: '', isFormValid: false }
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
-
-  handleSubmit(e) {
+ handleSubmit(e) {
     e.preventDefault();
     let { email } = this.state;
     axios.get(`http://localhost:4000/users?email=${email}`)
@@ -23,8 +21,7 @@ class Forgetpwd extends React.PureComponent {
         }
         else {
           alert("Password Does not match in DB!!!please signup")
-
-        }
+         }
       })
     }
  handleChange(e) {

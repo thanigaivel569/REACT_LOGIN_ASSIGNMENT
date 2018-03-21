@@ -13,28 +13,21 @@
       "lastName": "tom",
       "email": "tizentom@gmail.com",
       "password": "pass@123"
-     
     },
     {
-      
       "id": 3,
       "firstName": "thanigaivel",
       "lastName": "a",
       "email": "thanigaivela@gmail.com",
       "password": "pass@123"
     },
-    
     {
-      
       "id": 4,
       "firstName": "tizen",
       "lastName": "333",
       "email": "tizen333@gmail.com",
       "password": "pass@123"
     }
-
-
-
   ],
   "Forgetpass": [
     {
@@ -50,19 +43,15 @@
       "lastName": "tom",
       "email": "tizentom@gmail.com",
       "password": "pass@123"
-     
     },
     {
-      
       "id": 3,
       "firstName": "thanigaivel",
       "lastName": "a",
       "email": "thanigaivela@gmail.com",
       "password": "pass@123"
     },
-    
     {
-      
       "id": 4,
       "firstName": "tizen",
       "lastName": "333",

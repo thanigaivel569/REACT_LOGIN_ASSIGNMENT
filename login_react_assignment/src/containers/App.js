@@ -7,49 +7,42 @@ import {Switch} from 'react-router';
 import  Frgtpwdnotification  from '../components/Resetpassword';
 import Forgetpwd from '../components/Forgetpwd';
 import Login from '../components/Login';
+import * as usersActionCreators from '../actionCreators/users'
+import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 
 
-class App extends Component {
-
-  constructor(props) {
+class App extends Component 
+{
+   constructor(props) {
     super(props);
     this.onForgetPassSuccess = this.onForgetPassSuccess.bind(this);
     this.onLoginSuccess = this.onLoginSuccess.bind(this);
    
   }
-
-  componentWillMount() {
+ componentWillMount() {
     
   }
 
   onForgetPassSuccess(firstName, lastName) {
     this.setState({firstName, lastName})
   }
-
-  onLoginSuccess(firstName, lastName) {
+ onLoginSuccess(firstName, lastName) {
 
     this.setState({firstName, lastName, isLoggedIn: true})
   }
-
-  
-
-  render() {
+ render() {
     return (
       <div className="container">
-      
-        <Header/>
-        
+      <Header/>
         <main>
           <Switch>
             <Route exact path="/home" component={Home}/>
             <Route exact path="/reset-password-notification" component={ Frgtpwdnotification }/>
             <Route path="/forget-password" render={props => <Forgetpwd {...props} onForgetPassSuccess={this.onForgetPassSuccess}/>}/>
             <Route path="/" render={props => <Login {...props} onLoginSuccess={this.onLoginSuccess}/>}/>
-            
           </Switch>
         </main>
-      
       </div>
     );
   }
@@ -57,17 +50,16 @@ class App extends Component {
 
 function mapStateToProps(state) {
   return {
-  
     isLoggedIn: state.usersState.toJS().isLoggedIn,
     firstName: state.usersState.toJS().firstName,
     lastName: state.usersState.toJS().lastName
   }
 }
-
 function mapDispatchToProps(dispatch) {
   return {
- store={}
+    actions: bindActionCreators({...usersActionCreators}, dispatch)
   }
 }
 
 export default withRouter(connect(mapStateToProps, mapDispatchToProps)(App))
+
