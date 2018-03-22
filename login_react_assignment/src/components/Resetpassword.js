@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom';
 
 const Frgtpwdnotification = (props) => (
   <div className="home">
-    <p>Reset password link will be send to ur mail successfully!!!Password Expires within 15 mins</p>
+    <p>Reset password link will be send to ur mail successfully!!!Link Expires within 15 mins</p>
    
   </div>);
 

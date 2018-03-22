@@ -4,7 +4,7 @@ import styled from 'styled-components'
 
 const Header = (props) => (<div>
   <Background>
-    <Route exact path="/" component={Login}><Title>Photon-Estore</Title></Route>
+   <Title>Photon-Estore</Title>
     <SubTitle>Photon is the largest and fastest growing provider of omni-channel and digital experiences serving over 34% of the Fortune 100's as their digital innovation partner.</SubTitle>
   </Background>
 </div>);

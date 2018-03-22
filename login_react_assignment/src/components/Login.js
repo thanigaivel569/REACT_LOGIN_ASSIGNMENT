@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
-class Login extends React.PureComponent {
+class Login extends Component {
 
   constructor(props) {
     super(props);
